@@ -1,10 +1,6 @@
 <template>
-  <div class="flex">
-    <div class="w-1/4 bg-gray-200">
-      <!-- Contenido del sidebar -->
-    </div>
-
-    <div class="w-3/4 p-4">
+  <div class="flex"> 
+    <div class=" p-4">
       <div class="grid grid-cols-4 gap-4">
         <div class="bg-gray-100 p-4">
           <h3 class="text-lg font-semibold mb-4">Pendientes</h3>
@@ -53,7 +49,7 @@ export default {
       await this.fetchTasksByStatus('completed');
       await this.fetchTasksByStatus('review');
     } catch (error) {
-      console.error('Error al obtener las tareas:', error);
+      console.error('Error:', error);
     }
   }
 };

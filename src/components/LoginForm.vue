@@ -1,11 +1,4 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-md w-full space-y-8">
-      <div>
-        <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
-          Iniciar sesión
-        </h2>
-      </div>
       <form class="mt-8 space-y-6" @submit.prevent="onSubmit">
         <input type="hidden" name="remember" value="true">
         <div class="rounded-md shadow-sm -space-y-px">
@@ -39,8 +32,6 @@
           </button>
         </div>
       </form>
-    </div>
-  </div>
 </template>
 
 <script>

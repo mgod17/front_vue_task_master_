@@ -19,9 +19,6 @@ export default {
       required: true
     }
   },
-  mounted() {
-    console.log("Tasks in TaskCard:", this.task);
-  }
 };
 </script>
 
