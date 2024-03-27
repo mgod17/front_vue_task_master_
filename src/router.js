@@ -2,13 +2,19 @@ import { createWebHistory, createRouter } from 'vue-router';
 import Login from "./view/LoginView.vue";
 import ForgotPassword from "./view/ForgotPassword";
 import App from "./App.vue";
-
+import DashboardView from "./view/DashboardView.vue"
 const routes = [
   {
     path: '/',
     name: 'App',
     redirect: '/login',
     component: App
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: DashboardView,
+    meta: { requiresAuth: true } 
   },
   {
     path: '/login',
